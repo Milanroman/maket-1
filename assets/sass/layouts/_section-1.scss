@@ -1,0 +1,29 @@
+.merits {
+    @include section-propertis(368px, #232324); //Parameters of main sections
+}
+h2 {
+    @include text-propertis(40px, $font-family, $text-aligen, $color-text);
+    padding-top: 30px;
+    font-weight: 400;
+    line-height: 24px;
+}
+#section1-p-text {
+    @include text-propertis(24px, $font-family, $text-aligen, #d94948);
+    font-weight: 400;
+    line-height: 24px; 
+    padding-top: 8px; 
+}
+.merits-img {
+    margin-top: 25px;
+}
+h3 {
+    @include text-propertis(30px, $font-family, $text-aligen, $color-text);
+    font-weight: 400;
+    line-height: 24px; 
+    padding-top: 8px; 
+}
+.merits-p {
+    @include text-propertis(18px, $font-family, $text-aligen, #e74c3c);
+    font-weight: 400;
+    line-height: 21px;
+}

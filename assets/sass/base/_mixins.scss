@@ -1,0 +1,12 @@
+//Parameters of main sections
+@mixin section-propertis ($height, $background-color){
+    height: $height;
+    background-color: $background-color;
+} 
+//h2 options
+@mixin text-propertis ($font-size, $font-family, $text-align, $color) {
+    font-size: $font-size;
+    font-family: $font-family;
+    text-align: $text-align;
+    color: $color;
+}

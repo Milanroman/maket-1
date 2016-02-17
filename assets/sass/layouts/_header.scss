@@ -1,0 +1,118 @@
+.padding-null {
+    padding: 0;
+   
+}
+.header {
+    @include section-propertis(875px, #eb4f4e);  //Parameters of main sections
+}
+.nav-background {
+    background: url("../images/nav-background.png") 100% no-repeat;
+}
+.nav-img {
+    height: 125px;
+    width: 67px;
+}
+#shape {
+    float: left;
+}
+.logo-block {
+    margin-top: 26px;
+    padding-bottom: 0;
+    width: 166px;
+    height: 63px;
+}
+.header-row {
+    height: $nav-height;
+}
+nav {
+    margin-top: 40px;
+}
+
+.nav-a {
+    display: inline-block;
+    border-radius: 3px;
+    padding-top:5px;
+    width: 65px;
+    height: 30px;
+    font-family: Arial;
+    color:  $color-text;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.32px;
+    text-align: $text-aligen;
+    border: none;
+    margin-right: 57px;
+
+    &:list-child {
+        margin-right: 0;
+    }
+    &:hover {
+        text-decoration: none;
+        background-color: #232324;
+        color: $color-text;
+    }
+}
+.height-h1 { 
+    height: 117px;
+    
+    h1 {
+        @include text-propertis(57px, $font-family, $text-aligen, $color-text);
+        padding-top: 60px;
+        margin: 0;
+    }
+}
+#header-p-text {
+    @include text-propertis(20px, $font-family, $text-aligen, $color-text);
+    padding-top: 26px;
+    margin: 0;
+}
+.slider {
+	
+    background:  #eb4f4e; 
+}
+#slider-carousel {
+	padding-top: 80px;
+}
+
+div#carousel { 
+  perspective: 1200px; 
+  background: #100000; 
+  padding-top: 10%; 
+  font-size:0; 
+  margin-bottom: 3rem; 
+  overflow: hidden; 
+}
+figure#spinner { 
+  transform-style: preserve-3d; 
+  height: 300px; 
+  transform-origin: 50% 50% -500px; 
+  transition: 1s; 
+} 
+figure#spinner img { 
+  width: 50%; max-width: 425px; 
+  position: absolute; left: 30%;
+  transform-origin: 50% 50% -500px;
+  outline:1px solid transparent; 
+}
+figure#spinner img:nth-child(1) { transform:rotateY(0deg); 
+}
+figure#spinner img:nth-child(2) { transform: rotateY(-45deg); }
+figure#spinner img:nth-child(3) { transform: rotateY(-90deg); }
+figure#spinner img:nth-child(4) { transform: rotateY(-135deg); }
+figure#spinner img:nth-child(5){ transform: rotateY(-180deg); }
+figure#spinner img:nth-child(6){ transform: rotateY(-225deg); }
+figure#spinner img:nth-child(7){ transform: rotateY(-270deg); }
+figure#spinner img:nth-child(8){ transform: rotateY(-315deg); }
+div#carousel ~ span { 
+  color: #fff; 
+  margin: 5%; 
+  display: inline-block; 
+  text-decoration: none; 
+  font-size: 2rem; 
+  transition: 0.6s color; 
+  position: relative; 
+  margin-top: -6rem; 
+  border-bottom: none; 
+  line-height: 0; }
+div#carousel ~ span:hover { color: #888; cursor: pointer; }
+
